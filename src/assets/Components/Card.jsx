@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Card = () => {
+const Card = (props) => {
   return (
-    <div>Hola, soy una tarjeta</div>
+    <div className='card'>
+      <h1>Nombre : {props.nombre}</h1>
+      <h2>Edad: {props.edad}</h2>
+    </div>
   )
 }
 
 export default Card
+
